@@ -17,5 +17,5 @@ RUN ./init_iller.sh
 EXPOSE 4444
 
 # Command to run the application
-CMD ["python", "iller.py"]
+CMD ["python3", "iller.py"]
 
