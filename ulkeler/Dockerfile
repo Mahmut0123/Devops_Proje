@@ -5,13 +5,13 @@ FROM golang:1.17-alpine
 WORKDIR /app
 
 # Copy the init script
-COPY init_ulkeler.sh /app/init_ulkeler.sh
+#COPY init_ulkeler.sh /app/init_ulkeler.sh
 
 # Make the script executable
-RUN chmod +x /app/init_ulkeler.sh
+#RUN chmod +x /app/init_ulkeler.sh
 
 # Run the init script
-RUN /bin/sh /app/init_ulkeler.sh
+#RUN /bin/sh /app/init_ulkeler.sh
 
 # Copy the Go application code
 COPY . .

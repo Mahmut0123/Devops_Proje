@@ -5,11 +5,11 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Install dependencies
-COPY  requirements.txt requirements.txt
+COPY /home/finartz/proje/iller/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy application code
-COPY . .
+COPY . /home/finartz/proje/iller/
 #COPY init_iller.sh /app/init_iller.sh
 #RUN chmod +x /app/init_iller.sh
 #RUN ./init_iller.sh
